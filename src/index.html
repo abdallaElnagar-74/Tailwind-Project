@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Css Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mandali&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="font-body-font">
+    <!-- home-section  -->
+    <section class="pb-20 bg-[url('images/hero-2-bg.png')]" id="home">
+      <nav
+        class="max-[1023px]:bg-white max-[1023px]:py-3 py-5 fixed top-0 start-0 end-0 transition-all duration-1000 z-[10000]"
+        id="nav"
+      >
+        <div class="container mx-auto">
+          <div class="content mx-10 flex justify-between items-center">
+            <div class="logo">
+              <img src="images/logo-dark.png" class="w-full" alt="" />
+            </div>
+            <div class="nav-items max-[1023px]:hidden">
+              <ul
+                class="flex items-list max-[1023px]:flex-col max-[1023px]:items-center"
+              >
+                <li
+                  class="min-[1023px]:me-6 cursor-pointer text-[#6B7280] font-normal nav-item max-[1023px]:mb-3"
+                >
+                  <a href="#home" class="aktiv-link">Home</a>
+                </li>
+                <li
+                  class="min-[1023px]:me-6 cursor-pointer text-[#6B7280] font-normal nav-item max-[1023px]:mb-3"
+                >
+                  <a href="#features">Features</a>
+                </li>
+                <li
+                  class="min-[1023px]:me-6 cursor-pointer text-[#6B7280] font-normal nav-item max-[1023px]:mb-3"
+                >
+                  <a href="#screenshots">Screenshots</a>
+                </li>
+                <li
+                  class="min-[1023px]:me-6 cursor-pointer text-[#6B7280] font-normal nav-item max-[1023px]:mb-3"
+                >
+                  <a href="#testimonials">Testimonials</a>
+                </li>
+                <li
+                  class="min-[1023px]:me-6 cursor-pointer text-[#6B7280] font-normal nav-item max-[1023px]:mb-3"
+                >
+                  <a href="#pricing">Pricing</a>
+                </li>
+                <li
+                  class="min-[1023px]:me-6 cursor-pointer text-[#6B7280] font-normal nav-item"
+                >
+                  <a href="#contact">Contact us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="max-[1023px]:hidden">
+              <div
+                class="btns flex justify-center w-full items-center max-[1022px]:mt-3"
+              >
+                <button class="text-[#6B7280] font-normal">Login</button>
+                &nbsp; &nbsp;
+                <button
+                  class="text-[rgb(33,121,253)] border-solid border-[1px] transition-all duration-200 hover:bg-blue-600 hover:text-white py-2 px-4 rounded-md bg-[rgb(13,110,253,.1)] border-sky-500"
+                >
+                  Sign up
+                </button>
+              </div>
+            </div>
+            <div class="min-[1023px]:hidden">
+              <i
+                class="fa-solid fa-bars text-2xl cursor-pointer py-2 px-3 bg-[#EFF2F6] rounded-md hidden"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <div
+          class="container mt-2 cloned-div max-[1024px]:mx-auto min-[1023px]:hidden h-0 overflow-hidden"
+        ></div>
+      </nav>
+      <div class="container mx-auto pt-48 max-[400px]:pt-28">
+        <div
+          class="grid md:grid-cols-2 sm:grid-cols-1 items-center gap-4 justify-between mx-10"
+        >
+          <div class="left">
+            <div
+              class="h-16 w-16 bg-[rgb(13,110,253,.1)] rounded-full flex justify-center items-center"
+            >
+              <i class="fa-solid fa-rocket text-2xl text-[#2563EB]"></i>
+            </div>
+            <h1
+              class="text-5xl text-[rgb(55,65,81)] leading-[4rem] font-semibold mt-6"
+            >
+              Manage Your Activity <br />
+              With <span class="text-[rgb(37,99,235)]">Appexy</span>
+            </h1>
+            <p class="text-base font-normal text-gray-500 mt-9">
+              Maecenas tempus, tellus eget condimentum rhoncus quam semper
+              libero sit <br />
+              amet adipiscing sem neque sed ipsum nam quam nunc blandit vel
+              luctus <br />
+              pulvinar.
+            </p>
+            <div
+              class="mt-16 max-[382.5px]:flex max-[382.5px]:flex-col max-[382.5px]:gap-y-2 max-[382.5px]:w-3/4 max-[382.5px]:mx-auto"
+            >
+              <button
+                class="bg-gradient-to-r from-blue-600 to-blue-400 py-3 px-3 text-white rounded-md"
+              >
+                Get Started Today
+              </button>
+
+              <button
+                class="py-3 px-3 bg-transparent border-2 rounded-md border-solid border-black hover:text-white hover:bg-black transition-all duration-500"
+              >
+                Download App
+              </button>
+            </div>
+          </div>
+          <div class="right">
+            <div class="w-2/3 md:ms-auto max-[680px]:mx-auto">
+              <img src="images/hero-2-img.png" class="w-full" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- features-section  -->
+    <section class="features pt-20 mx-auto" id="features">
+      <h3 class="uppercase text-center text-[rgb(55,65,81)]">
+        How it <span class="font-semibold">Work</span>
+      </h3>
+      <h1 class="text-center font-semibold text-3xl mt-3 text-[rgb(55,65,81)]">
+        How does it work ?
+      </h1>
+      <p class="text-gray-500 text-center font-normal text-base mt-3">
+        Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
+        <br />
+        doloremque rem aperiam.
+      </p>
+      <div
+        class="grid md:grid-cols-3 sm:grid-cols-1 mt-24 gap-y-5 container mx-auto pb-24"
+      >
+        <div class="flex flex-col justify-center items-center relative">
+          <div
+            style="border-radius: 28% 72% 50% 50%/26% 20% 80% 74%"
+            class="h-24 w-24 bg-blue-50 flex justify-center items-center"
+          >
+            <i class="fa-solid fa-list-ul text-4xl"></i>
+          </div>
+          <h1
+            class="text-center text-[rgb(55,65,81)] font-semibold text-xl mt-2"
+          >
+            1. Intuitive visual editor
+          </h1>
+          <p class="text-center text-gray-500 text-base font-normal mt-3">
+            Nemo enim ipsam quia voluptas sit aspernatur ist<br />dolores.
+          </p>
+          <img
+            src="images/arrow-top.png"
+            class="top-[45%] start-[75%] absolute max-[1279.5px]:top-[40%] max-[767.5px]:hidden"
+            alt=""
+          />
+        </div>
+        <div class="flex flex-col justify-center items-center relative">
+          <div
+            style="border-radius: 28% 72% 50% 50%/26% 20% 80% 74%"
+            class="h-24 w-24 bg-[rgb(16,185,129,.1)] flex justify-center items-center"
+          >
+            <i class="fa-solid fa-palette text-4xl"></i>
+          </div>
+          <h1
+            class="text-center text-[rgb(55,65,81)] font-semibold text-xl mt-2"
+          >
+            2. Huge design collection
+          </h1>
+          <p class="text-center text-gray-500 text-base font-normal mt-3">
+            Nemo enim ipsam quia voluptas sit aspernatur ist<br />dolores.
+          </p>
+          <img
+            src="images/arrow-bottom.png"
+            class="top-[45%] start-[75%] absolute max-[1279.5px]:top-[40%] max-[767.5px]:hidden"
+            alt=""
+          />
+        </div>
+        <div class="flex flex-col justify-center items-center relative">
+          <div
+            style="border-radius: 28% 72% 50% 50%/26% 20% 80% 74%"
+            class="h-24 w-24 bg-[rgb(245,158,11,.1)] flex justify-center items-center"
+          >
+            <i class="fa-solid fa-layer-group text-4xl"></i>
+          </div>
+          <h1
+            class="text-center text-[rgb(55,65,81)] font-semibold text-xl mt-2"
+          >
+            3. One click installation
+          </h1>
+          <p class="text-center text-gray-500 text-base font-normal mt-3">
+            Nemo enim ipsam quia voluptas sit aspernatur ist<br />dolores.
+          </p>
+        </div>
+      </div>
+
+      <div class="ourfeatures bg-[rgb(249,250,251)] pb-20">
+        <h3 class="uppercase text-center text-[rgb(55,65,81)] pt-24">
+          our <span class="font-semibold">features</span>
+        </h3>
+        <h1
+          class="text-center font-semibold text-3xl mt-3 text-[rgb(55,65,81)]"
+        >
+          How does it work ?
+        </h1>
+        <p class="text-gray-500 text-center font-normal text-base mt-3">
+          Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
+          <br />
+          doloremque rem aperiam.
+        </p>
+        <div class="container mx-auto mt-16">
+          <div
+            class="content grid md:grid-cols-2 sm:grid-cols-1 mx-10 items-center gap-5 justify-between"
+          >
+            <div class="left">
+              <img src="images/features-1.png" alt="" />
+            </div>
+            <div class="right">
+              <h1 class="text-4xl font-bold text-[rgb(55,65,81)]">
+                Discover your destination
+              </h1>
+              <p class="text-gray-500 text-base mt-8">
+                On the other hand, we denounce with righteous indignation so
+                blinded that they cannot.
+              </p>
+              <div class="flex items-center gap-x-4 mt-8">
+                <div>
+                  <div
+                    class="ikon w-10 h-10 shadow-md text-blue-600 rounded-full bg-white flex justify-center items-center"
+                  >
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                </div>
+                <p class="text-base text-gray-500">
+                  <span class="font-bold text-[rgb(55,65,81)]"
+                    >The wise a therefore always holds</span
+                  >
+                  in us matters to this <br />
+                  principle a selection a rejects pleasures.
+                </p>
+              </div>
+              <div class="flex items-center gap-x-4 mt-8">
+                <div>
+                  <div
+                    class="ikon w-10 h-10 shadow-md text-blue-600 rounded-full bg-white flex justify-center items-center"
+                  >
+                    <i class="fa-solid fa-layer-group"></i>
+                  </div>
+                </div>
+                <p class="font-normal text-base text-gray-500">
+                  Sed perspiciatis omnis a
+                  <span class="font-bold text-[rgb(55,65,81)]"
+                    >natus error accusantium <br />
+                    doloremque</span
+                  >
+                  laudantium tota rem aperiam eaque ipsa <br />
+                  quae illo inventore.
+                </p>
+              </div>
+              <div class="flex items-center gap-x-4 mt-8">
+                <div>
+                  <div
+                    class="font-normal ikkon w-10 h-10 shadow-md text-blue-600 rounded-full bg-white flex justify-center items-center"
+                  >
+                    <i class="fa-solid fa-lock"></i>
+                  </div>
+                </div>
+                <p class="font-normal text-base text-gray-500">
+                  <span class="font-bold text-[rgb(55,65,81)]"
+                    >The wise a therefore always holds</span
+                  >
+                  in us matters to this <br />
+                  principle a selection a rejects pleasures.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="connecting-people pb-20 bg-[url('images/features-bg.png')] bg-no-repeat"
+      >
+        <div
+          class="grid md:grid-cols-2 sm:grid-cols-1 items-center container mx-auto pt-24 gap-y-5"
+        >
+          <div class="left res">
+            <h1 class="text-4xl font-bold text-[rgb(55,65,81)]">
+              Connecting people, Places
+            </h1>
+            <p class="text-gray-500 text-base mt-8">
+              On the other hand, we denounce with righteous indignation so
+              blinded that they cannot.
+            </p>
+            <div class="flex items-center gap-x-4 mt-8">
+              <div>
+                <div
+                  class="ikon w-10 h-10 shadow-md text-blue-600 rounded-full bg-white flex justify-center items-center"
+                >
+                  <i class="fa-solid fa-check"></i>
+                </div>
+              </div>
+              <p class="text-base text-gray-500">
+                <span class="font-bold text-[rgb(55,65,81)]"
+                  >The wise a therefore always holds</span
+                >
+                in us matters to this <br />
+                principle a selection a rejects pleasures.
+              </p>
+            </div>
+            <div class="flex items-center gap-x-4 mt-8">
+              <div>
+                <div
+                  class="ikon w-10 h-10 shadow-md text-blue-600 rounded-full bg-white flex justify-center items-center"
+                >
+                  <i class="fa-solid fa-layer-group"></i>
+                </div>
+              </div>
+              <p class="font-normal text-base text-gray-500">
+                Sed perspiciatis omnis a
+                <span class="font-bold text-[rgb(55,65,81)]"
+                  >natus error accusantium <br />
+                  doloremque</span
+                >
+                laudantium tota rem aperiam eaque ipsa <br />
+                quae illo inventore.
+              </p>
+            </div>
+            <div class="flex items-center gap-x-4 mt-8">
+              <div>
+                <div
+                  class="font-normal ikkon w-10 h-10 shadow-md text-blue-600 rounded-full bg-white flex justify-center items-center"
+                >
+                  <i class="fa-solid fa-lock"></i>
+                </div>
+              </div>
+              <p class="font-normal text-base text-gray-500">
+                <span class="font-bold text-[rgb(55,65,81)]"
+                  >The wise a therefore always holds</span
+                >
+                in us matters to this <br />
+                principle a selection a rejects pleasures.
+              </p>
+            </div>
+          </div>
+          <div class="right res flex justify-end">
+            <img src="images/features-2.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="end bg-[url('images/counter-bg.jpg')] bg-no-repeat bg-cover bg-center bg-fixed py-28 relative"
+      >
+        <div class="absolute inset-0 w-full h-full bg-[rgb(17,24,39,.7)]"></div>
+        <div
+          class="container mx-auto h-full flex items-center justify-center relative"
+        >
+          <div
+            class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 items-center gap-7"
+          >
+            <div
+              class="border border-gray-500 rounded-md text-white bg-[rgb(107,114,128,.4);] p-5"
+            >
+              <div class="flex items-center gap-6">
+                <i class="fa-solid fa-globe text-white text-5xl"></i>
+                <div>
+                  <h1 class="text-5xl text-white">825</h1>
+                  <p class="text-xl text-white uppercase">Global Brands</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="border border-gray-500 rounded-md text-white bg-[rgb(107,114,128,.4);] p-5"
+            >
+              <div class="flex items-center gap-6">
+                <i class="fa-solid fa-smile text-white text-5xl"></i>
+                <div>
+                  <h1 class="text-5xl text-white">1800+</h1>
+                  <p class="text-xl text-white uppercase">Happy Clients</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="border border-gray-500 rounded-md text-white bg-[rgb(107,114,128,.4);] p-5"
+            >
+              <div class="flex items-center gap-6">
+                <i class="fa-solid fa-lightbulb text-white text-5xl"></i>
+                <div>
+                  <h1 class="text-5xl text-white">599+</h1>
+                  <p class="text-xl text-white uppercase">Global Brands</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="border border-gray-500 rounded-md text-white bg-[rgb(107,114,128,.4);] p-5"
+            >
+              <div class="flex items-center gap-6">
+                <i class="fa-solid fa-users text-white text-5xl"></i>
+                <div>
+                  <h1 class="text-5xl text-white">2000+</h1>
+                  <p class="text-xl text-white uppercase">User clients</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- screenShots-section  -->
+    <section id="screenshots" class="pt-20">
+      <h3 class="uppercase text-center text-[rgb(55,65,81)]">
+        App  <span class="font-semibold">Screens</span>
+      </h3>
+      <h1 class="text-center font-semibold text-3xl mt-3 text-[rgb(55,65,81)]">
+        Awesome Screenshot
+      </h1>
+      <p class="text-gray-500 text-center font-normal text-base mt-3">
+        Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
+        <br />
+        doloremque rem aperiam.
+      </p>
+      <div class="flex flex-wrap justify-center">
+        <div class="md:w-8/12 w-full">
+      <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="images/1.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/2.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/3.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/4.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/5.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/6.jpg" />
+      </div>
+      </div>
+    </div>
+  </div>
+        </div>
+    </section>
+
+    <!-- testimonials  -->
+     <section class="bg-[rgb(249,250,251)] py-20 " id="testimonials">
+      <h3 class="uppercase text-center text-[rgb(55,65,81)]">
+        Our  <span class="font-semibold">Testimonial</span>
+      </h3>
+      <h1 class="text-center font-semibold text-3xl mt-3 text-[rgb(55,65,81)]">
+        What Our Customers Say
+      </h1>
+      <p class="text-gray-500 text-center font-normal text-base mt-3">
+        Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
+        <br />
+        doloremque rem aperiam.
+      </p>
+      <p class="text-base font-normal mt-20 text-center text-gray-500">“Itaque earum us tenetur sapiente delectus asperiores repellat.”</p>
+     <div class="max-w-3xl mx-auto mt-5">
+      <p class="text-center text-lg font-medium mx-10">At vero eos et accusamus iusto odio dignissimos ducimus qui
+        blanditiis praesentium voluptatum deleniti atqued corrupti as quos dolores quas molestias
+        excepturi occaecati provident..
+      </p>
+     </div>
+     <div class="flex justify-center mt-7 flex-col items-center">
+      <img src="images/user-1.jpg" class="w-16 h-16 rounded-full" alt="">
+      <span class="text-base font-normal mt-4">Mayra Vasquez</span>
+      <span class="text-base font-normal text-gray-500">Web Development, USA</span>
+     </div>
+     <div class="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 container mx-auto items-center justify-center gap-6 mt-12">
+      <div class="flex justify-center"><img src="images/dribbble.png" class="" alt=""></div>
+      <div class="flex justify-center"><img src="images/bootstrap.png" class="" alt=""></div>
+      <div class="flex justify-center"><img src="images/insta.png" class="" alt=""></div>
+      <div class="flex justify-center"><img src="images/jquery.png" class="" alt=""></div>
+     </div>
+     </section>
+
+     <!-- pricing-section  -->
+      <section id="pricing" class="py-20">
+        <h3 class="uppercase text-center text-[rgb(55,65,81)]">
+          Our  <span class="font-semibold">Pricing</span>
+        </h3>
+        <h1 class="text-center font-semibold text-3xl mt-3 text-[rgb(55,65,81)]">
+          Pricing Plan
+        </h1>
+        <p class="text-gray-500 text-center font-normal text-base mt-3">
+          Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
+          <br />
+          doloremque rem aperiam.
+        </p>
+
+        <div class="flex justify-center mt-10">
+          <div class=" flex gap-5 justify-end p-2 border rounded-full bg-[rgb(240,241,242)] items-center">
+            <span class="me-4 bg-blue-600 px-4 py-2 text-white rounded-full">Monthly</span>
+            <span class="text-base font-normal px-4 py-2 rounded-full">Yearly</span>
+          </div>
+        </div>
+
+        <div class="pricing-offers container mx-auto mt-10">
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 mx-10 gap-6">
+            <div class="shadow-md rounded-md ">
+            <div class="p-10">
+              <div class="top text-center bg-gray-50 my-7 p-7 rounded-md">
+                <p class="font-medium text-lg">Free</p>
+                <h1 class="text-base font-normal text-gray-500"><span class="text-blue-600 text-4xl font-semibold">$0.00</span>/Month</h1>
+              </div>
+              <div class="offer">
+                <div>
+                  <i class="fa-solid fa-check text-gray-500 me-3"></i> <span class="text-gray-500"><span class="font-semibold text-black">3</span> Projects</span>
+                </div>
+                <div class="my-3">
+                  <i class="fa-solid fa-check text-gray-500 me-3"></i> <span class="text-gray-500"><span class="font-semibold text-black">580GB</span> Storage</span>
+                </div>
+                <div>
+                  <i class="fa-solid fa-check text-gray-500 me-3"></i> <span class="text-gray-500"><span class="font-semibold text-black">Unlimited</span> Contacts</span>
+                </div>
+                <div class="my-3">
+                  <i class="fa-solid fa-check text-gray-500 me-3"></i> <span class="text-gray-500"><span class="font-semibold text-black">5</span> Domains</span>
+                </div>
+                <div>
+                  <i class="fa-solid fa-check text-gray-500 me-3"></i> <span class="text-gray-500">Free Support <span class="font-semibold text-black">24/7</span></span>
+                </div>
+              </div>
+              <button class="bg-gradient-to-r from-blue-600 to-blue-400 w-3/4 block mx-auto text-white py-2 rounded-md mt-12">Choose Plan</button>
+            </div>
+            </div>
+            <div class="shadow-md rounded-md relative overflow-hidden">
+            <div class="p-10">
+              <div class="top text-center bg-gray-50 my-7 p-7 rounded-md">
+                <p class="font-medium text-lg">Standard</p>
+                <h1 class="text-base font-normal text-gray-500"><span class="text-blue-600 text-4xl font-semibold">$29.00</span>/Month</h1>
+              </div>
+              <div class="offer">
+                <div>
+                  <i class="fa-solid fa-check text-gray-500 me-3"></i> <span class="text-gray-500"><span class="font-semibold text-black">10</span> Projects</span>
+                </div>
+                <div class="my-3">
+                  <i class="fa-solid fa-check text-gray-500 me-3"></i> <span class="text-gray-500"><span class="font-semibold text-black">1TB</span> Storage</span>
+                </div>
+                <div>
+                  <i class="fa-solid fa-check text-gray-500 me-3"></i> <span class="text-gray-500"><span class="font-semibold text-black">Unlimited</span> Contacts</span>
+                </div>
+                <div class="my-3">
+                  <i class="fa-solid fa-check text-gray-500 me-3"></i> <span class="text-gray-500"><span class="font-semibold text-black">12</span> Domains</span>
+                </div>
+                <div>
+                  <i class="fa-solid fa-check text-gray-500 me-3"></i> <span class="text-gray-500">Free Support <span class="font-semibold text-black">24/7</span></span>
+                </div>
+              </div>
+              <button class="bg-gradient-to-r from-blue-600 to-blue-400 w-3/4 block mx-auto text-white py-2 rounded-md mt-12">Choose Plan</button>
+            </div>
+            <div class="right-0 top-0 h-16 w-16 z-10 absolute">
+              <div class="bg-red-600 text-white text-center py-1 absolute  rotate-45 end-[-35px] top-[32px] w-[170px] shadow-lg">Most Popular</div>
+            </div>
+            </div>
+            <div class="shadow-md rounded-md ">
+            <div class="p-10">
+              <div class="top text-center bg-gray-50 my-7 p-7 rounded-md">
+                <p class="font-medium text-lg">Enterprice</p>
+                <h1 class="text-base font-normal text-gray-500"><span class="text-blue-600 text-4xl font-semibold">$49.00</span>/Month</h1>
+              </div>
+              <div class="offer">
+                <div>
+                  <i class="fa-solid fa-check text-gray-500 me-3"></i> <span class="text-gray-500"><span class="font-semibold text-black">20</span> Projects</span>
+                </div>
+                <div class="my-3">
+                  <i class="fa-solid fa-check text-gray-500 me-3"></i> <span class="text-gray-500"><span class="font-semibold text-black">2.5TB</span> Storage</span>
+                </div>
+                <div>
+                  <i class="fa-solid fa-check text-gray-500 me-3"></i> <span class="text-gray-500"><span class="font-semibold text-black">Unlimited</span> Contacts</span>
+                </div>
+                <div class="my-3">
+                  <i class="fa-solid fa-check text-gray-500 me-3"></i> <span class="text-gray-500"><span class="font-semibold text-black">18</span> Domains</span>
+                </div>
+                <div>
+                  <i class="fa-solid fa-check text-gray-500 me-3"></i> <span class="text-gray-500">Free Support <span class="font-semibold text-black">24/7</span></span>
+                </div>
+              </div>
+              <button class="bg-gradient-to-r from-blue-600 to-blue-400 w-3/4 block mx-auto text-white py-2 rounded-md mt-12">Choose Plan</button>
+            </div>
+            </div>
+          </div>
+         
+        </div>
+      </section>
+
+      <!-- ourFAQS  -->
+       <div class="focus bg-[#F9FAFB] py-20">
+        <h3 class="uppercase text-center text-[rgb(55,65,81)]">
+          Our  <span class="font-semibold">FAQs</span>
+        </h3>
+        <h1 class="text-center font-semibold text-3xl mt-3 text-[rgb(55,65,81)]">
+          Frequently Asked Questions
+
+        </h1>
+        <p class="text-gray-500 text-center font-normal text-base mt-3 mb-8">
+          Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
+          <br />
+          doloremque rem aperiam.
+        </p>
+
+      <div class="container mx-auto">
+        <div class="grid md:grid-cols-2 grid-cols-1 items-center mx-10 justify-center">
+        <div>
+          <div class="w-2/3 max-[767px]:mx-auto">
+            <img src="images/faq.png" class="w-full" alt="">
+          </div>
+        </div>
+          <div>
+            <!-- What is term -->
+         <div class="transition ">
+          <!-- header -->
+          <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16 bg-white rounded-lg">
+              <i class="fas fa-plus"></i>
+              <h3>How to install App?</h3>
+          </div>
+          <!-- Content -->
+          <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
+              <p class="leading-6 font-light pl-9 text-justify">
+              Our asked sex point her she seems. New plenty she horses parish design you. Stuff sight equal of my woody. Him children bringing goodness suitable she entirely put
+              far daughter.
+              </p>
+              <button class="rounded-full bg-blue-600 text-white font-medium font-lg px-6 py-2 my-5 ml-9">Learn more</button>
+          </div>
+          </div>
+  
+          <!-- When to use Accordion Components -->
+          <div class="transition ">
+          <!-- header -->
+          <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16 bg-white rounded-lg">
+              <i class="fas fa-plus"></i>
+              <h3>How do I get the Mobile App for my phone?</h3>
+          </div>
+          <!-- Content -->
+          <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
+              <p class="leading-6 font-light pl-9 text-justify">
+              Our asked sex point her she seems. New plenty she horses parish design you. Stuff sight equal of my woody. Him children bringing goodness suitable she entirely put
+              far daughter.
+              </p>
+              <button class="rounded-full bg-blue-600 text-white font-medium font-lg px-6 py-2 my-5 ml-9">Learn more</button>
+          </div>
+          </div>
+  
+          <!-- Accordion Wrapper -->
+          <div class="transition">
+          <!-- header -->
+          <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16 bg-white rounded-lg">
+              <i class="fas fa-plus"></i>
+              <h3>What’s special about Appexy?</h3>
+          </div>
+          <!-- Content -->
+          <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
+              <p class="leading-6 font-light pl-9 text-justify">
+              Our asked sex point her she seems. New plenty she horses parish design you. Stuff sight equal of my woody. Him children bringing goodness suitable she entirely put
+              far daughter.
+              </p>
+              <button class="rounded-full bg-blue-600 text-white font-medium font-lg px-6 py-2 my-5 ml-9">Learn more</button>
+          </div>
+          </div>
+  
+          <!-- Accordion Wrapper -->
+          <div class="transition ">
+          <!-- header -->
+          <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16 bg-white rounded-lg">
+              <i class="fas fa-plus"></i>
+              <h3>How much does Appexy cost?</h3>
+          </div>
+          <!-- Content -->
+          <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
+              <p class="leading-6 font-light pl-9 text-justify">
+              Our asked sex point her she seems. New plenty she horses parish design you. Stuff sight equal of my woody. Him children bringing goodness suitable she entirely put
+              far daughter.
+              </p>
+              <button class="rounded-full bg-blue-600 text-white font-medium font-lg px-6 py-2 my-5 ml-9">Learn more</button>
+          </div>
+        </div>
+          <div class="transition ">
+          <!-- header -->
+          <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16 bg-white rounded-lg">
+              <i class="fas fa-plus"></i>
+              <h3>What about the security of my payments?</h3>
+          </div>
+          <!-- Content -->
+          <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
+              <p class="leading-6 font-light pl-9 text-justify">
+              Our asked sex point her she seems. New plenty she horses parish design you. Stuff sight equal of my woody. Him children bringing goodness suitable she entirely put
+              far daughter.
+              </p>
+              <button class="rounded-full bg-blue-600 text-white font-medium font-lg px-6 py-2 my-5 ml-9">Learn more</button>
+          </div>
+        </div>
+          <div class="transition ">
+          <!-- header -->
+          <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16 bg-white rounded-lg">
+              <i class="fas fa-plus"></i>
+              <h3>How do i disable installed apps?</h3>
+          </div>
+          <!-- Content -->
+          <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
+              <p class="leading-6 font-light pl-9 text-justify">
+              Our asked sex point her she seems. New plenty she horses parish design you. Stuff sight equal of my woody. Him children bringing goodness suitable she entirely put
+              far daughter.
+              </p>
+              <button class="rounded-full bg-indigo-600 text-white font-medium font-lg px-6 py-2 my-5 ml-9">Learn more</button>
+          </div>
+        </div>
+        </div>
+        </div>
+      </div>
+      
+       </div>
+
+       <!-- availability  -->
+        <div class="py-20 mx-10">
+          <h1 class="text-5xl font-bold text-center text-[rgb(55,65,81)] max-w-2xl mx-auto ">
+            Available For Your Smartphone.
+          </h1>
+          <p class="text-gray-500 text-center max-w-2xl mx-auto mt-5 text-base font-normal">The wise man therefore always holds in these matters to this of selection he rejects pleasures to other greater that id pains to avoid worse.</p>
+          <div class="flex justify-center gap-x-4 mt-8">
+            <div>
+              <img src="images/i-store.png" alt="">
+            </div>
+          <div>
+            <div>
+              <img src="images/play-store.png" alt="">
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <!-- contact-section  -->
+         <section id="contact" class="py-20 bg-[rgb(249,250,251)]">
+          <h3 class="uppercase text-center text-[rgb(55,65,81)]">
+            Our  <span class="font-semibold">Contact Us</span>
+          </h3>
+          <h1 class="text-center font-semibold text-3xl mt-3 text-[rgb(55,65,81)]">
+            Get in Touch
+          </h1>
+          <p class="text-gray-500 text-center font-normal text-base mt-3">
+            Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
+            <br>
+            doloremque rem aperiam.
+          </p>
+          <div class="container mx-auto mt-24">
+            <div class="grid lg:grid-cols-2 grid-cols-1 mx-10 gap-y-6">
+              <div class="left">
+                <div class="hello flex items-center">
+                  <img src="images/hello-icon.png" class="h-20" alt="">
+                  <span class="text-3xl ms-5 font-bold text-[rgb(55,65,81)]">Say Hello!</span>
+                </div>
+
+                <div class="flex items-center text-xl font-normal mt-8">
+                  <div>
+                    <div class="bg-blue-100 h-11 w-12 rounded-lg flex justify-center items-center"><i class="fa-solid fa-envelope text-[rgb(37,99,235)] text-2xl"></i></div>
+                  </div>
+                  <span class="ms-5">Email</span>
+                </div>
+                <p class="text-base font-normal text-gray-500 mt-6"><i class="fa-solid fa-arrow-right me-1"></i> JuanaMRush@jourrapide.com</p>
+                <p class="text-base font-normal text-gray-500 mt-1"><i class="fa-solid fa-arrow-right me-1"></i> BrandonDBrown@jourrapide.com</p>
+
+                <div class="flex items-center text-xl font-normal mt-10">
+                  <div>
+                    <div class="bg-blue-100 h-11 w-12 rounded-lg flex justify-center items-center"><i class="fa-solid fa-phone text-[rgb(37,99,235)] text-2xl"></i></div>
+                  </div>
+                  <span class="ms-5">Phone</span>
+                </div>
+
+                <p class="text-base font-normal text-gray-500 mt-6"><i class="fa-solid fa-arrow-right me-1"></i> (+01) 1234 5678 00</p>
+                <p class="text-base font-normal text-gray-500 mt-1"><i class="fa-solid fa-arrow-right me-1"></i> (+01) 1234 5678 00</p>
+
+                <div class="flex items-center text-xl font-normal mt-10">
+                  <div>
+                    <div class="bg-blue-100 h-11 w-12 rounded-lg flex justify-center items-center"><i class="fa-solid fa-location-dot text-[rgb(37,99,235)] text-2xl"></i></div>
+                  </div>
+                  <span class="ms-5">Address</span>
+                </div>
+
+                <p class="text-base font-normal text-gray-800 mt-6"><i class="fa-solid fa-arrow-right me-1"></i> New York Office</p>
+                <p class="text-gray-500 text-base font-normal mt-1">331 Maple Street, Monroe Avenue, CA 90017</p>
+                <p class="text-base font-normal text-gray-800 mt-7"><i class="fa-solid fa-arrow-right me-1"></i> Anguilla Office</p>
+                <p class="text-gray-500 text-base font-normal mt-1">2118 Bird Spring, Creek Road, TX 77388
+
+                </p>
+              </div>
+              <div class="right bg-white p-12 rounded-md shadow-lg">
+                <div class="grid md:grid-cols-2 grid-cols-1 gap-4">
+                  <div>
+                    <label for="fname" class="font-semibold text-gray-500">First Name</label>
+                  <input type="text" placeholder="your first name ..." class="w-full px-3 border focus:outline-none py-2 rounded-lg mt-1" name="" id="fname">
+                  </div>
+                  <div>
+                    <label for="lname" class="font-semibold text-gray-500">Last Name</label>
+                  <input type="text" placeholder="your Last name ..." class="w-full px-3 border focus:outline-none py-2 rounded-lg mt-1" name="" id="lname">
+                  </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 grid-cols-1 gap-4 mt-5">
+                  <div>
+                    <label for="email" class="font-semibold text-gray-500">Email Address</label>
+                  <input type="email" placeholder="your email ..." class="w-full px-3 border focus:outline-none py-2 rounded-lg mt-1" name="" id="email">
+                  </div>
+                  <div>
+                    <label for="phone" class="font-semibold text-gray-500">Phone Number</label>
+                  <input type="number" placeholder="your phone number ..." class="w-full px-3 border focus:outline-none py-2 rounded-lg mt-1" name="" id="phone">
+                  </div>
+                </div>
+
+                <div class="grid  grid-cols-1 mt-5">
+                  <div>
+                    <label for="subject" class="font-semibold text-gray-500">Subject</label>
+                  <input type="text" placeholder="type subject ..." class="w-full px-3 border focus:outline-none py-2 rounded-lg mt-1" name="" id="subject">
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 mt-5">
+                  <div>
+                    <label for="messege" class="font-semibold text-gray-500">Messages</label>
+                     <textarea name="" id="messege" class="w-full border focus:outline-none rounded-lg mt-1 px-3 pt-2" placeholder="type messages ..." rows="5"></textarea>
+                  </div>
+                </div>
+                
+                <button class="bg-gradient-to-r from-red-600 to-red-300 py-2 px-4 text-white rounded-lg mt-5">Send Messages <i class="fa-solid fa-paper-plane text-white"></i></button>
+              </div>
+            </div>
+          </div>
+         </section>
+
+         <!-- footer  -->
+          <footer></footer>
+    <button
+      class="fixed opacity-0 bottom-[10px] end-5 bg-gradient-to-r from-blue-600 to-blue-400 py-1 px-2 rounded-md fixed-btn transition-all duration-500"
+    >
+      <i class="fa-solid fa-chevron-up text-white"></i>
+    </button>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

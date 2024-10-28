@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.toggle-checkbox:checked {
+  @apply: right-0 border-green-400;
+  right: 0;
+  border-color: #68D391;
+}
+.toggle-checkbox:checked + .toggle-label {
+  @apply: bg-green-400;
+  background-color: #68D391;
+}
+.aktiv-link{
+  @apply before:absolute before:top-[85%] before:mt-1 before:start-[50%] before:-translate-x-1/2 before:bg-[rgb(33,121,253)] before:w-2/3 before:h-[2px] relative  text-[rgb(33,121,253)]
+}
+.res{
+  @apply min-[768px]:ms-10 max-[767px]:mx-10;
+}
+.swiper {
+  width: 100% !important;
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+}
+
+.swiper-slide {
+  background-position: center !important;
+  background-size: cover !important;
+  width: 300px !important;
+  height: auto!important;
+}
+
+.swiper-slide img {
+  display: block !important;
+  width: 100% !important;
+  border-radius: 5px;
+  @apply border
+}
+.accordion-content {
+  transition: max-height 0.3s ease-out, padding 0.3s ease;
+  }
+  .accordion-header{
+    @apply mb-3 text-gray-800
+  }
